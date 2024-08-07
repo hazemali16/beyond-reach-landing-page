@@ -9,6 +9,13 @@ const NavBar = () => {
         let bars = document.querySelector(".bars")
         let mobileNavbar = document.querySelector(".mobile-navbar")
         let clicked = 0
+        function closeMenu() {
+            bars.children[0].style.cssText = "top: 0; transform: translateY(0) rotate(0)"
+            bars.children[1].style.opacity = "1"
+            bars.children[2].style.cssText = "bottom: 0; top: unset; transform: translateY(0) rotate(0)"
+            mobileNavbar.classList.remove("show-menu")
+            clicked = 0
+        }
         bars.onclick = () => {
             if (clicked === 0) {
                 bars.children[0].style.cssText = "top: 50%; transform: translateY(-50%) rotate(45deg)"
@@ -17,11 +24,12 @@ const NavBar = () => {
                 mobileNavbar.classList.add("show-menu")
                 clicked = 1
             } else {
-                bars.children[0].style.cssText = "top: 0; transform: translateY(0) rotate(0)"
-                bars.children[1].style.opacity = "1"
-                bars.children[2].style.cssText = "bottom: 0; top: unset; transform: translateY(0) rotate(0)"
-                mobileNavbar.classList.remove("show-menu")
-                clicked = 0
+                closeMenu()
+            }
+        }
+        for (let index = 0; index < mobileNavbar.children.length; index++) {
+            mobileNavbar.children[index].onclick = () => {
+                closeMenu()
             }
         }
 
@@ -55,7 +63,6 @@ const NavBar = () => {
                 <li className=""><a href='#contact' className="cursor-pointer">التواصل</a></li>
             </ul>
             </div>
-
         </>
 );
 };
