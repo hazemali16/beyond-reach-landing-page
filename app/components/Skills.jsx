@@ -1,7 +1,7 @@
 
 const Skills = () => {
   return (
-  <div className="py-40 w-10/12 max-sm:w-11/12 mx-auto opacity-0 duration-500 translate-y-10" id="skills">
+  <div className="pt-40 w-10/12 max-sm:w-11/12 mx-auto opacity-0 duration-500 translate-y-10" id="skills">
     <div className="overflow-hidden mx-auto text-center w-[500px] max-md:w-full">
     <h2 className="text-3xl mb-7 font-bold text-[var(--second-color)] duration-500 translate-y-[200px] delay-700 max-sm:text-2xl max-sm:mb-5">
         لماذا تختار بيوند ريتش؟
