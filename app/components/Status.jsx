@@ -2,7 +2,7 @@
 
 const Status = () => {
   return (
-  <div className="py-40 w-10/12 grid grid-cols-3 gap-10 mx-auto max-lg:grid-cols-2 max-md:grid-cols-1 opacity-0 duration-500 translate-y-10 max-sm:w-11/12" id="status">
+  <div className="pt-40 w-10/12 grid grid-cols-3 gap-10 mx-auto max-lg:grid-cols-2 max-md:grid-cols-1 opacity-0 duration-500 translate-y-10 max-sm:w-11/12" id="status">
     <div className="flex justify-center flex-col items-center gap-5 shadow-lg rounded-md p-5">
     <i className="fa-regular fa-lightbulb fa-3x text-[var(--second-color)]"></i>
     <h3 className="text-xl text-[var(--first-color)] font-bold">خبرتنا</h3>
