@@ -37,7 +37,7 @@ const Contact = () => {
   <div className="py-40 flex justify-center items-center opacity-0 translate-y-10 duration-500" id="contact">
     <div className="shadow-xl grid grid-cols-2 w-3/4 max-xl:w-11/12 max-lg:grid-cols-1">
         <div className="p-5">
-        <h2 className="text-center text-2xl text-bold text-[var(--second-color)]">تواصلوا معنا اآلن وابدأوا رحلتكم نحو التميز</h2>
+        <h2 className="text-center text-2xl text-bold text-[var(--second-color)]">تواصلوا معنا الآن وابدأوا رحلتكم نحو التميز</h2>
         <form action="" onSubmit={handleSubmit} className="mt-10 flex flex-col gap-5">
             <div className="flex gap-3 flex-col w-full">
                 <label htmlFor="">الاسم الكامل</label>
